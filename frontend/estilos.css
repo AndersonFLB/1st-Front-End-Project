@@ -1,0 +1,73 @@
+/* Reset básico: elimina márgenes y padding predeterminados y establece box-sizing */
+* {
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina el padding predeterminado */
+    box-sizing: border-box; /* Incluye el padding y borde en el cálculo del ancho y alto del elemento */
+  }
+   
+  /* Estilos generales para el cuerpo de la página */
+  body {
+    font-family: Arial, sans-serif; /* Define la fuente principal */
+    background-color: #f4f4f4; /* Establece un fondo gris claro */
+    color: #333; /* Define el color del texto */
+  }
+   
+  /* Estilos para el encabezado y navegación */
+  header {
+    background-color: #ff6f61; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+    padding: 20px 0; /* Espaciado vertical en el encabezado */
+    text-align: center; /* Centra el contenido dentro del encabezado */
+  }
+   
+  nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Utiliza flexbox para distribuir los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin-top: 10px; /* Espacio superior para separar el menú del título */
+  }
+   
+  nav li {
+    margin: 0 15px; /* Espacio lateral entre los elementos de la lista */
+  }
+   
+  nav a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-weight: bold; /* Pone el texto en negrita */
+  }
+   
+  /* Estilos para la sección de la galería de mascotas */
+  .galeria {
+    display: flex; /* Utiliza flexbox para alinear los artículos */
+    justify-content: space-around; /* Distribuye los artículos con espacio alrededor */
+    flex-wrap: wrap; /* Permite que los artículos se acomoden en varias filas si es necesario */
+    padding: 20px; /* Espaciado interior de la sección */
+  }
+   
+  /* Estilos para cada tarjeta de mascota */
+  .mascota {
+    background-color: #fff; /* Fondo blanco para la tarjeta */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 30%; /* Ancho de cada tarjeta (ajustable según necesidades) */
+    margin-bottom: 20px; /* Espacio inferior entre tarjetas */
+    text-align: center; /* Centra el contenido dentro de la tarjeta */
+    padding: 10px; /* Espaciado interior de la tarjeta */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra para dar un efecto de elevación */
+  }
+   
+  .mascota img {
+    max-width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* Ajusta la altura de forma proporcional */
+    border-bottom: 1px solid #ddd; /* Borde inferior para separar la imagen del contenido */
+    margin-bottom: 10px; /* Espacio inferior después de la imagen */
+  }
+   
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #333; /* Color de fondo oscuro para el pie de página */
+    color: #ddd; /* Color de texto claro */
+    text-align: center; /* Centra el contenido en el pie de página */
+    padding: 10px 0; /* Espaciado vertical en el pie de página */
+  }
